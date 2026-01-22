@@ -1,0 +1,15 @@
+{
+  "name": "Narendra Modi",
+  "party": "BJP",
+  "age": 71,
+  "votes": [
+    {
+      "user": "611f7132e8f3ee01f4e4ef6",
+      "votedAt": "2024-02-20T08:00:00.000Z"
+    },
+    {
+      "user": "611f7144e8f3ee01f4e4ef8",
+      "votedAt": "2024-02-20T08:15:00.000Z"
+    }
+  ]
+}
