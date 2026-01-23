@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-// const bcrypt = require('bcrypt');
 
 // Define the Person schema
 const personSchema = new mongoose.Schema({
@@ -7,31 +6,33 @@ const personSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-   age: {
-    type:Number,
-     },  
- work: {
-    type:string,
-    enum:['chef','waiter'],
+  age: {
+    type: Number
+  },
+  work: {
+    type: String,   // ❗ FIXED (String, not string)
+    enum: ['chef', 'waiter'],
     required: true
   },
   mobile: {
-    type:String,
+    type: String,
     required: true
   },
   email: {
-    type:String,
+    type: String,
     required: true,
-    unique:true,
+    unique: true
   },
-  address:{
-    type:String
+  address: {
+    type: String
   },
   salary: {
-    type:Number,
+    type: Number,
     required: true
-  },
+  }
 });
-//Create person model
-const person=mongoose.model('Person', personSchema);
-module.exports= person;
+
+// Create Person model
+const Person = mongoose.model('Person', personSchema);
+
+module.exports = Person;
