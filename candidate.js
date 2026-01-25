@@ -34,3 +34,5 @@ const candidateSchema = new mongoose.Schema({
     default: 0
   },
 });
+const Candidate= mongoose.model('Candidate', candidateSchema);
+module.exports= Candidate;
